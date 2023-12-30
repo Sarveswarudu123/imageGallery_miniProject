@@ -1,0 +1,128 @@
+@font-face{
+    font-family: 'Rubrik';
+    src: url('fonts/RubikDS.ttf');
+}
+
+nav .logo .title{
+    font-family: 'Rubrik';
+    font-size: large;
+}
+html{
+    min-height: 100vh;
+    max-width: 1280px;
+    background-color: white;
+    margin: 0 auto;
+}
+body{
+
+    margin: 0px  !important;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.page-container {
+
+}
+
+.nav{
+
+}
+
+nav  {
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+nav .logo .title {
+    color: white;
+    font-family: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 22px 48px;
+    background-color: rgb(50, 50, 50);
+}
+
+nav ul li:hover{
+    background-color: rgb(132, 132, 132);
+}
+nav ul li .active {
+    background-color: rgb(50, 50, 50) ;
+}
+
+nav ul li a {
+    color: white;
+text-decoration: none;
+}
+
+@media all and (max-width:800px) {
+nav {
+    justify-content:flex-start;
+}
+nav ul {
+    justify-content: space-between;
+}
+}
+
+@media all and (max-width:600px) {
+    nav {
+
+        flex-direction: column;
+        align-items:center;
+    }
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
+
+@media all and (min-width:801px){
+    nav{
+        width:100%;
+    }
+}
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 18px;
+}
